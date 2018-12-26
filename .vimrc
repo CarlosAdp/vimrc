@@ -107,9 +107,6 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 syntax enable
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
 
 " Enable Vim Markdown Preview
 let vim_markdown_preview_github=1
