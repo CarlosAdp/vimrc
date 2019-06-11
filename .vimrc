@@ -75,7 +75,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Yggdroot/indentLine'
-Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-surround'
 Plugin 'JamshedVesuna/vim-markdown-preview'
@@ -97,14 +96,6 @@ filetype plugin indent on    " required
 
 " Enable indent guides by default
 let g:indent_guides_enable_on_vim_startup = 1
-
-" Enable  NERDTree automatically
-autocmd vimenter * NERDTree
-" Allow NERDTree to open automatically when no file is specified
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-" Make vim close when NERDTree window is the only one open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 syntax enable
 
