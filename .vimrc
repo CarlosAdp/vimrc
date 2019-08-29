@@ -101,3 +101,19 @@ syntax enable
 
 " Enable Vim Markdown Preview
 let vim_markdown_preview_github=1
+
+" Formatting for python development
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \  softtabstop=4
+    \  shiftwidth=4
+    \  expandtab
+    \  autoindent
+    \  fileformat=unix
+    \  foldmethod=syntax
+    \  colorcolumn=80
+
+au BufNewFile,BufRead *.conf setf dosini
+
+au BufNewFile,BufRead COMMIT_EDITMSG
+    \ set colorcolumn=72
