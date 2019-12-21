@@ -41,6 +41,10 @@ Plugin 'othree/yajs.vim'
 " Plugin for linting/fixing
 Plugin 'dense-analysis/ale'
 
+" Plugin for yaml indentation
+Plugin 'mrk21/yaml-vim'
+
+
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 

@@ -22,6 +22,7 @@ autocmd BufWritePost *.py call flake8#Flake8()
 " Setting highlighting syntax for python
 let python_highlight_all=1
 syntax on
+set colorcolumn=80
 
 "colorscheme zenburn
 
@@ -45,7 +46,7 @@ let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 set nu
 
 " alvan/vim-closetag
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*jsx,*js'
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
 let g:closetag_filetypes = 'html,xhtml,phtml'
 let g:closetag_xhtml_filetypes = 'xhtml,jsx'
@@ -56,12 +57,6 @@ let g:closetag_regions = {
     \ 'javascript.jsx': 'jsxRegion',
     \ }
 let g:closetag_close_shortcut = '<leader>>'
-
-" Set tab definitions
-set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=2
 
 " Settings for ale
 let g:ale_linters = {
