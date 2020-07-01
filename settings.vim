@@ -22,7 +22,8 @@ autocmd BufWritePost *.py call flake8#Flake8()
 " Setting highlighting syntax for python
 let python_highlight_all=1
 syntax on
-set colorcolumn=80
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set colorcolumn=80 
+
 
 "colorscheme zenburn
 

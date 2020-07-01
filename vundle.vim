@@ -44,6 +44,9 @@ Plugin 'dense-analysis/ale'
 " Plugin for yaml indentation
 Plugin 'mrk21/yaml-vim'
 
+"Plugin for flake8
+Plugin 'nvie/vim-flake8' 
+
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
