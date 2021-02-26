@@ -1,3 +1,9 @@
+" Set spaces and tabs for Json
+au BufRead,BufNewFile *.json set expandtab|
+            \ set shiftwidth=2|
+            \ set autoindent|
+            \ set smartindent|
+
 " Set area where splits should open
 set splitbelow
 set splitright

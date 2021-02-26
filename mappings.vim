@@ -18,3 +18,6 @@ inoremap ;;; ”
 
 " Removing the mapping for AutoPairs
 autocmd VimEnter,BufEnter,BufWinEnter * silent! iunmap <buffer> â
+
+" Create search and replace for text in visual selection
+vnoremap <C-R> "hy:%s/<C-R>h//gc<left><left><left>
