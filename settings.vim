@@ -33,22 +33,6 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set colorcolumn=80
 
 "colorscheme zenburn
 
-" scrooloose/nerdtree: Open NERDTree at startup (even if no files were to be
-" open or when we open a directory)
-autocmd vimenter * NERDTree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
-
-autocmd VimEnter * wincmd p
-
-" scrooloose/nerdtree: Close NERDTree when it's the only window open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-" scrooloose/nerdtree: Ignore pyc files
-let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
-
 " set numbering
 set nu
 
