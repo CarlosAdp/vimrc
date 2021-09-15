@@ -47,6 +47,9 @@ Plugin 'mrk21/yaml-vim'
 "Plugin for flake8
 Plugin 'nvie/vim-flake8' 
 
+"Plugin for Json
+Plugin 'elzr/vim-json'
+
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)

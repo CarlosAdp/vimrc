@@ -25,7 +25,7 @@ syntax on
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set colorcolumn=80 
 
 
-"colorscheme zenburn
+colorscheme pablo
 
 " scrooloose/nerdtree: Open NERDTree at startup (even if no files were to be
 " open or when we open a directory)
@@ -76,3 +76,8 @@ let g:ale_fixers = {
 \}
 
 let g:ale_fix_on_save = 1
+
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
