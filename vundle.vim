@@ -29,9 +29,6 @@ Plugin 'jiangmiao/auto-pairs'
 " Auto pairs for (X)HTML
 Plugin 'alvan/vim-closetag'
 
-" Plugin for directory navegation inside vim
-Plugin 'scrooloose/nerdtree'
-
 " Plugin for automatic (un)commenting
 Plugin 'tpope/vim-commentary'
 
